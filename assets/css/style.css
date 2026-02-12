@@ -98,6 +98,16 @@ nav ul {
     border-radius: 4vw;
 }
 
+.banner_1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 4vw;
+}
+
+.banner_text {
+    color: white;
+}
+
 .list {
     list-style: none;
     font-size: 3vw;
@@ -139,7 +149,55 @@ nav ul {
     width: 43vw;
     height: 30vh;
     background-color: black;
-    border-radius: 2vw;
+    border-radius: 2vw 0vw 2vw 2vw;
+    transition: 0.25s ease;
+}
+
+.item_1:hover {
+    scale: 1.025;
+}
+
+.item_holder_1 {
+    width: 100%;
+    height: 9vh;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+}
+
+.item_image_1 {
+    width: 100%;
+    height: 55%;
+    border-radius: 2vw 0vw 10vw 0vw;
+}
+
+
+
+.item_name_1 {
+    color: white;
+    width: 20vw;
+    height: 3vw;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 1.5vw;
+    font-size: 2.15vw;
+    margin-right: 1vw
+}
+
+.item_price_1 {
+    color: blanchedalmond;
+    font-size: 2.15vw;
+    margin-bottom: 4vh;
+    height: 6vh;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.item_description_1 {
+    width: 25vw;
+    height: 8vw;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 2vh;
+    margin: auto;
+    font-size: 1.3vw;
+    color: white;
 }
 
 /* ============================================================
@@ -147,7 +205,8 @@ nav ul {
    ============================================================ */
 @media (min-width: 481px) and (max-width: 1100px) {
     header {
-        background-color: red; /* Tablet specific color change */
+        background-color: red;
+        /* Tablet specific color change */
         height: 14vh;
     }
 
@@ -172,7 +231,8 @@ nav ul {
         height: 50vh;
     }
 
-    .category, .image_holder_1 {
+    .category,
+    .image_holder_1 {
         height: 46vh;
         margin-top: 2vh;
     }
@@ -188,76 +248,106 @@ nav ul {
     }
 
     .website_name {
-        font-size: clamp(4vw,8vw);
+        font-size: 3.5vw;
         height: 10vh;
+        width: 13vw;
         margin-top: 2.9vh;
-        margin-left: 2vw;
+        margin-left: 4vw;
+        background-color: rgba(0, 0, 0, 0);
 
     }
 
-    nav ul{
-        font-size:1.75vw ;
+    nav ul {
+        font-size: 1.4vw;
         margin-top: 5vh;
-        margin-left:3vw;
-        width:25vw
+        margin-left: 3vw;
+        width: 20vw
     }
+
     .body {
-        height: 400vh;
+        height: 425vh;
     }
 
     .search_bar {
         height: 10vh;
         font-size: 1.5vw;
-        width:40vw;
-        
+        width: 45vw;
+
     }
 
     .search_button {
         height: 9vh;
-        width:6.5vw;
+        width: 6.5vw;
         font-size: 2vw;
-        
+
     }
 
     .section_1 {
-        height: 80vh;
+        height: 90vh;
+        margin-bottom: 10vh;
     }
 
-    .category{
-        height: 70vh;
+    .category {
+        height: 90vh;
         margin-top: 4.5vh;
-        width:15vw;
+        width: 15vw;
     }
 
-     .image_holder_1{
-        height: 70vh;
+    .image_holder_1 {
+        height: 90vh;
         margin-top: 4.5vh;
-        width:90vw
-     }
+        width: 90vw;
+        background-image: url("../../images/banner_1.jpg");
+        background-size: 100% 100%;
+    }
 
     .list {
         font-size: 2vw;
         line-height: 3.5;
         margin-left: 1.5vw;
         margin-top: 5vh;
-        width:10vw;
+        width: 10vw;
         background-color: rgba(0, 0, 0, 0);
+
     }
 
-    .category_item{
+    .banner_1 {
+        width: 100%;
+        height: 100%;
+        border-radius: 4vw;
+    }
+
+    .banner_text {
+        color: orangered;
+        font-size: 8vw;
+        margin-top:45vh;
+        margin-right: 5vw;
+        text-align: right;
+    }
+
+    .category_item {
         text-align: center;
     }
 
     .section_2 {
-        height: 310vh;
+        height: 302.5vh;
+    }
+    
+    .title_1 {
+        color: rgb(255, 255, 255);
+        font-size: 3.5vw;
+        margin-top: 8vh;
+        margin-left: 5vw;
+        height:5vh;
+        width:30vw;
     }
 
     .grid_holder {
-        height: 300vh;
+        height: 292.5vh;
         grid-template-columns: 28.66vw 28.66vw 28.66vw;
         grid-template-rows: 70vh 70vh 70vh 70vh;
         gap: 2vw;
-        background-color: aquamarine;
+        background-color: rgba(0, 0, 0, 0);
     }
 
     .item_1 {
@@ -275,33 +365,34 @@ nav ul {
     .item_image_1 {
         width: 100%;
         height: 55%;
-        border-radius: 2vw 2vw 15vw 0vw;
+        border-radius: 2vw 0vw 10vw 0vw;
     }
 
     .item_name_1 {
         color: white;
-        width: 13vw;
+        width: 20vw;
         height: 3vw;
         background-color: rgba(0, 0, 0, 0);
-        margin-left: 2vw;
-        font-size: 2.25vw;
-        margin-right:6.75vw
+        margin-left: 1.5vw;
+        font-size: 2.15vw;
+        margin-right: 1vw
     }
 
     .item_price_1 {
         color: blanchedalmond;
-        font-size: 2.25vw;
+        font-size: 2.15vw;
         margin-bottom: 4vh;
         height: 6vh;
         background-color: rgba(0, 0, 0, 0);
     }
-    .item_description_1{
-        width:25vw;
-        height:8vw;
+
+    .item_description_1 {
+        width: 25vw;
+        height: 8vw;
         background-color: rgba(0, 0, 0, 0);
-        margin-top:2vh;
-        margin:auto;
-        font-size:1.4vw;
+        margin-top: 2vh;
+        margin: auto;
+        font-size: 1.3vw;
         color: white;
     }
 }
