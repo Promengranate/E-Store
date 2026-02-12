@@ -1,0 +1,127 @@
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+ 
+ 
+ @media (min-width:1101px) {
+            header {
+                background-color: black;
+                height: 16vh;
+                
+            }
+
+            .website_name {
+                font-size: clamp(4rem, 5.5rem, 6.5rem);
+                display: flex;
+                align-items: center;
+                height: 10vh;
+                margin-top: 2.9vh;
+                margin-left: 2.5vw;
+                margin-right: 2.5vw;
+            }
+            .body{
+                height:300vh;
+            }
+            .search_bar {
+                height: 10vh;
+                margin-top: 2.75vh;
+                font-size: 1.5vw;
+            }
+
+            .search_button {
+                height: 9vh;
+                margin-top: 3.3vh;
+                font-size: 2vw;
+                border-radius: 50vw;
+            }
+
+            nav ul {
+                margin-top: 5vh;
+                margin-left: 2.5vw;
+                font-size: 1.5vw;
+            }
+
+            .section_1 {
+                height: 80vh;
+            }
+
+            .category {
+                height: 70vh;
+                margin-top: 4.5vh;
+
+            }
+
+            .image_holder_1 {
+                height: 70vh;
+                margin-top: 4.5vh;
+            }
+
+            .list {
+                margin-top: 5vh;
+                font-size: 2vw;
+                line-height: 3.5;
+                color: white;
+            }
+
+
+            .section_2 {
+                width: 94vw;
+                height: 134.5vh;
+                background-color: orangered;
+                margin-left: 2.5%;
+                border-radius: 2vw;
+                display: flex;
+            }
+
+            .grid_holder {
+                width: 90vw;
+                height: 124.5vh;
+                margin: auto;
+                background-color: rgba(0, 0, 0, 0);
+                border-radius: 2vw;
+                display: grid;
+                grid-template-columns: 28.66vw 28.66vw 28.66vw;
+                grid-template-rows: 60vh 60vh;
+                gap: 2vw;
+            }
+
+            .item_1 {
+                width: 28.66vw;
+                height: 60vh;
+                background-color: black;
+                border-radius: 2vw;
+            }
+            .item_holder_1{
+                width: 100%;
+                height:25%;
+                background-color: rgba(0, 0, 0, 0);
+                display:flex;
+            }
+            .item_image_1{
+                width:100%;
+                height:70%;
+                border-radius: 2vw 2vw 10vw 0vw;
+            }
+            
+            .item_name_1{
+                color: white;
+                width:16vw;
+                height:4vw;
+                background-color: rgba(0, 0, 0, 0);
+                margin-left:1vw;
+                font-size: 3vw;
+                margin-top: 3vh;
+            }
+            .item_price_1{
+                color: blanchedalmond;
+                font-size: 3vw;
+                width: 9vw;
+                height: 8vh;
+                background-color: rgba(0, 0, 0, 0);
+                margin-top: 3vh;
+                margin-left:2vw;
+            }
+        }

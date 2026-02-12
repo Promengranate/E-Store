@@ -1,0 +1,307 @@
+/* ============================================================
+   1. GLOBAL & MOBILE STYLES (Default / 0px - 480px)
+   ============================================================ */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    position: sticky;
+    top: 0;
+    color: white;
+}
+
+.body {
+    width: 100%;
+    background-color: black;
+    height: 200vh;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: orangered;
+}
+
+.website_name {
+    font-size: 5.5vw;
+    width: 18vw;
+    height: 4vh;
+    margin-top: 1.75vh;
+    margin-right: 0.5vw;
+    margin-left: 2vw;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 2.25vw;
+    justify-content: space-between;
+    width: 29vw;
+    padding-left: 0px;
+    margin-left: 2vw;
+    margin-top: 2.5vh;
+}
+
+.search_bar {
+    width: 35vw;
+    height: 3vh;
+    margin-top: 1.75vh;
+    margin-right: 1vw;
+    border-radius: 1vw;
+    border: none;
+    font-size: 2vw;
+}
+
+.search_button {
+    width: 10vw;
+    height: 3vh;
+    font-size: 0.5em;
+    margin-top: 2vh;
+    border-radius: 1vw;
+    border: none;
+}
+
+.section_1 {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 25vh;
+    display: flex;
+}
+
+.category {
+    background-color: orangered;
+    width: 20%;
+    height: 22vh;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-top: 1.5vh;
+    border-radius: 4vw 0vw;
+    color: white;
+    line-height: 2.7;
+}
+
+.image_holder_1 {
+    background-color: orangered;
+    width: 73%;
+    height: 22vh;
+    margin-right: 2.5%;
+    margin-top: 1.5vh;
+    border-radius: 4vw;
+}
+
+.list {
+    list-style: none;
+    font-size: 3vw;
+    margin-left: 3vw;
+    margin-top: 1.5vh;
+}
+
+.category_item {
+    transition: 0.1s ease;
+    cursor: pointer;
+}
+
+.category_item:hover {
+    scale: 1.1;
+}
+
+.section_2 {
+    width: 94vw;
+    height: 98vh;
+    background-color: orangered;
+    margin-left: 2.5%;
+    border-radius: 2vw;
+    display: flex;
+}
+
+.grid_holder {
+    width: 90vw;
+    height: 94.75vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 2vw;
+    display: grid;
+    grid-template-columns: 43vw 43vw;
+    grid-template-rows: 30vh 30vh;
+    gap: 4vw;
+}
+
+.item_1 {
+    width: 43vw;
+    height: 30vh;
+    background-color: black;
+    border-radius: 2vw;
+}
+
+/* ============================================================
+   2. TABLET STYLES (481px to 1100px)
+   ============================================================ */
+@media (min-width: 481px) and (max-width: 1100px) {
+    header {
+        background-color: red; /* Tablet specific color change */
+        height: 14vh;
+    }
+
+    .website_name {
+        font-size: clamp(1.5rem, 3.5rem, 4rem);
+        height: 10vh;
+        margin-left: 2vw;
+    }
+
+    .search_bar {
+        height: 7.5vh;
+        margin-top: 2.75vh;
+        font-size: 2vw;
+    }
+
+    .search_button {
+        height: 8.5vh;
+        font-size: 1.5vw;
+    }
+
+    .section_1 {
+        height: 50vh;
+    }
+
+    .category, .image_holder_1 {
+        height: 46vh;
+        margin-top: 2vh;
+    }
+}
+
+/* ============================================================
+   3. DESKTOP STYLES (1101px and up)
+   ============================================================ */
+@media (min-width: 1101px) {
+    header {
+        background-color: black;
+        height: 16vh;
+    }
+
+    .website_name {
+        font-size: clamp(4vw,8vw);
+        height: 10vh;
+        margin-top: 2.9vh;
+        margin-left: 2vw;
+
+    }
+
+    nav ul{
+        font-size:1.75vw ;
+        margin-top: 5vh;
+        margin-left:3vw;
+        width:25vw
+    }
+    .body {
+        height: 400vh;
+    }
+
+    .search_bar {
+        height: 10vh;
+        font-size: 1.5vw;
+        width:40vw;
+        
+    }
+
+    .search_button {
+        height: 9vh;
+        width:6.5vw;
+        font-size: 2vw;
+        
+    }
+
+    .section_1 {
+        height: 80vh;
+    }
+
+    .category{
+        height: 70vh;
+        margin-top: 4.5vh;
+        width:15vw;
+    }
+
+     .image_holder_1{
+        height: 70vh;
+        margin-top: 4.5vh;
+        width:90vw
+     }
+
+    .list {
+        font-size: 2vw;
+        line-height: 3.5;
+        margin-left: 1.5vw;
+        margin-top: 5vh;
+        width:10vw;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .category_item{
+        text-align: center;
+    }
+
+    .section_2 {
+        height: 310vh;
+    }
+
+    .grid_holder {
+        height: 300vh;
+        grid-template-columns: 28.66vw 28.66vw 28.66vw;
+        grid-template-rows: 70vh 70vh 70vh 70vh;
+        gap: 2vw;
+        background-color: aquamarine;
+    }
+
+    .item_1 {
+        width: 28.66vw;
+        height: 70vh;
+    }
+
+    .item_holder_1 {
+        width: 100%;
+        height: 9vh;
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+    }
+
+    .item_image_1 {
+        width: 100%;
+        height: 55%;
+        border-radius: 2vw 2vw 15vw 0vw;
+    }
+
+    .item_name_1 {
+        color: white;
+        width: 13vw;
+        height: 3vw;
+        background-color: rgba(0, 0, 0, 0);
+        margin-left: 2vw;
+        font-size: 2.25vw;
+        margin-right:6.75vw
+    }
+
+    .item_price_1 {
+        color: blanchedalmond;
+        font-size: 2.25vw;
+        margin-bottom: 4vh;
+        height: 6vh;
+        background-color: rgba(0, 0, 0, 0);
+    }
+    .item_description_1{
+        width:25vw;
+        height:8vw;
+        background-color: rgba(0, 0, 0, 0);
+        margin-top:2vh;
+        margin:auto;
+        font-size:1.4vw;
+        color: white;
+    }
+}
