@@ -1,0 +1,488 @@
+/* ============================================================
+   1. GLOBAL & MOBILE STYLES (Default / 0px - 480px)
+   ============================================================ */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    position: sticky;
+    top: 0;
+    color: white;
+    height: 8vh;
+}
+
+.body {
+    width: 100%;
+    background-color: black;
+    height: 200vh;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color: orangered;
+}
+
+.website_name {
+    font-size: 5.5vw;
+    width: 18vw;
+    height: 4vh;
+    margin-top: 2vh;
+    margin-right: 0.25vw;
+    margin-left: 2.25vw;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    font-size: 2vw;
+    justify-content: space-between;
+    width: 25vw;
+    padding-left: 0px;
+    margin-left: 2vw;
+    margin-top: 3.25vh;
+}
+
+.search_bar {
+    width: 40vw;
+    height: 3vh;
+    margin-top: 2.5vh;
+    margin-right: 1vw;
+    border-radius: 1vw;
+    border: none;
+    font-size: 2vw;
+}
+
+.search_button {
+    width: 8vw;
+    height: 3vh;
+    font-size: 0.5em;
+    margin-top: 2.5vh;
+    border-radius: 1vw;
+    border: none;
+}
+
+.section_1 {
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 25vh;
+    display: flex;
+}
+
+.category {
+    background-color: orangered;
+    width: 20%;
+    height: 22vh;
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+    margin-top: 1.5vh;
+    border-radius: 4vw 0vw;
+    color: white;
+    line-height: 2.7;
+}
+
+.image_holder_1 {
+    background-color: orangered;
+    width: 73%;
+    height: 22vh;
+    margin-right: 2.5%;
+    margin-top: 1.5vh;
+    border-radius: 4vw;
+    background-image: url("../../images/banner_1.jpg");
+    background-size: 100% 100%;
+}
+
+.banner_1 {
+    width: 100%;
+    height: 100%;
+    border-radius: 4vw;
+}
+
+.banner_text {
+    color: white;
+    text-align: right;
+    font-size: 7vw;
+    margin-top: 12vh;
+    margin-right: 3vw;
+}
+
+.list {
+    list-style: none;
+    font-size: 3vw;
+    margin-left: 3vw;
+    margin-top: 1.5vh;
+}
+
+.category_item {
+    transition: 0.1s ease;
+    cursor: pointer;
+}
+
+.category_item:hover {
+    scale: 1.1;
+}
+
+.title_1{
+    color:white;
+    margin-left: 3vw;
+    margin-bottom: 1vh;
+    background-color: rgba(0, 0, 0, 0);
+    width:40vw
+
+}
+.section_2 {
+    width: 94vw;
+    height: 98vh;
+    background-color: orangered;
+    margin-left: 2.5%;
+    border-radius: 2vw;
+    display: flex;
+}
+
+.grid_holder {
+    width: 90vw;
+    height: 94.75vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 2vw;
+    display: grid;
+    grid-template-columns: 43vw 43vw;
+    grid-template-rows: 30vh 30vh;
+    gap: 4vw;
+}
+
+.item_1 {
+    width: 43vw;
+    height: 30vh;
+    background-color: black;
+    border-radius: 2vw 0vw 2vw 2vw;
+    transition: 0.25s ease;
+}
+
+.item_1:hover {
+    scale: 1.025;
+}
+
+.item_holder_1 {
+    width: 100%;
+    height: 3vh;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+}
+
+.item_image_1 {
+    width: 100%;
+    height: 55%;
+    border-radius: 2vw 0vw 10vw 0vw;
+}
+
+
+
+.item_name_1 {
+    color: white;
+    width: 30vw;
+    height: 2.5vh;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 3.25vw;
+    font-size: 2.5vw;
+    margin-right: 1vw
+}
+
+.item_price_1 {
+    color: blanchedalmond;
+    font-size: 2.15vw;
+    margin-bottom: 4vh;
+    height: 2.5vh;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2.5vw;
+}
+
+.item_description_1 {
+    width: 35vw;
+    height: 12vw;
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 2vh;
+    margin: auto;
+    font-size: 1.75vw;
+    color: white;
+}
+
+/* ============================================================
+   2. TABLET STYLES (481px to 1100px)
+   ============================================================ */
+@media (min-width: 481px) and (max-width: 1100px) {
+    header {
+        background-color: black;
+        /* Tablet specific color change */
+        height: 10vh;
+    }
+
+    .body{
+        height:325vh
+    }
+    .website_name {
+        font-size: 4.5vw;
+        height: 6vh;
+        width:13.5vw;
+        margin-left: 2vw;
+        margin-right:1vw;
+        margin-top: 1.7vh;
+        background-color: rgba(165, 30, 30, 0);
+    }
+
+    nav ul{
+        font-size:1.7vw;
+        background-color: rgba(0, 255, 255, 0);
+        width:23vw;
+        margin-top:4vh
+    }
+    .search_bar {
+        height: 4vh;
+        margin-top: 3vh;
+        font-size: 2vw;
+        width:45vw
+    }
+
+    .search_button {
+        height: 4vh;
+        font-size: 1.5vw;
+        margin-top: 3vh;
+    }
+
+    .section_1 {
+        height: 40vh;
+        margin-bottom:5vh ;
+    }
+
+    .category{
+        height: 40vh;
+        line-height: 3.2;
+    }
+    .list{
+        margin-top: 4vh;
+    }
+    .image_holder_1 {
+        height: 40vh;
+        margin-top: 2vh;
+    }
+    .banner_text{
+        margin-top: 25vh;
+    }
+    .section_2{
+        height: 255vh;
+    }
+    .grid_holder{
+        height: 245vh;
+        grid-template-columns: 43vw 43vw;
+        grid-template-rows: 40vh 40vh 40vh 40vh 40vh 40vh;
+        gap: 2.5vw;
+        margin-left: 2.75vw;
+        margin-top: 2vh;
+    }
+    .title_1{
+        font-size: 3.5vw;
+    }
+    .item_1{
+        height: 40vh;
+        width:43vw;
+    }
+    .item_image_1{
+        height:50%;
+        margin-bottom: 1vh;
+    }
+    .item_holder_1{
+        background-color: rgba(65, 105, 225, 0);
+        margin: auto;
+        width:40vw;
+        margin-top:1vh;
+        height:4vh
+    }
+    .item_name_1{
+        background-color: rgba(255, 0, 0, 0);
+        margin-right:4.35vw;
+        margin-left:0vw;
+        font-size: 3vw;
+        height:4vh
+    }
+    .item_price_1{
+        background-color: rgba(0, 128, 0, 0);
+        font-size: 3vw;
+        height: 4vh;
+    }
+    .item_description_1{
+        background-color: rgba(0, 0, 255, 0);
+        width:40vw;
+        height:18vh;
+        margin-top: 1vh;
+        font-size: 2vw;
+    }
+}
+
+/* ============================================================
+   3. DESKTOP STYLES (1101px and up)
+   ============================================================ */
+@media (min-width: 1101px) {
+    header {
+        background-color: black;
+        height: 16vh;
+    }
+
+    .website_name {
+        font-size: 3.5vw;
+        height: 10vh;
+        width: 13vw;
+        margin-top: 2.9vh;
+        margin-left: 4vw;
+        background-color: rgba(0, 0, 0, 0);
+
+    }
+
+    nav ul {
+        font-size: 1.4vw;
+        margin-top: 6vh;
+        margin-left: 3vw;
+        width: 20vw
+    }
+
+    .body {
+        height: 425vh;
+    }
+
+    .search_bar {
+        height: 10vh;
+        font-size: 1.5vw;
+        width: 45vw;
+        margin-top: 2.75vh;
+    }
+
+    .search_button {
+        height: 10vh;
+        width: 6.5vw;
+        font-size: 1.5vw;
+        margin-top: 2.75vh;
+    }
+
+    .section_1 {
+        height: 90vh;
+        margin-bottom: 10vh;
+    }
+
+    .category {
+        height: 90vh;
+        margin-top: 4.5vh;
+        width: 15vw;
+        
+    }
+
+    .image_holder_1 {
+        height: 90vh;
+        margin-top: 4.5vh;
+        width: 90vw;
+        background-image: url("../../images/banner_1.jpg");
+        background-size: 100% 100%;
+    }
+
+    .list {
+        font-size: 2vw;
+        line-height: 5;
+        margin-left: 1.5vw;
+        margin-top: 2.5vh;
+        width: 10vw;
+        background-color: rgba(0, 0, 0, 0);
+
+    }
+
+    .banner_1 {
+        width: 100%;
+        height: 100%;
+        border-radius: 4vw;
+    }
+
+    .banner_text {
+        color: white;
+        font-size: 8vw;
+        margin-top: 45vh;
+        margin-right: 5vw;
+        text-align: right;
+    }
+
+    .category_item {
+        text-align: center;
+    }
+
+    .section_2 {
+        height: 302.5vh;
+    }
+
+    .title_1 {
+        color: rgb(255, 255, 255);
+        font-size: 3.5vw;
+        margin-top: 8vh;
+        margin-left: 5vw;
+        margin-bottom: 1vh;
+        width: 30vw;
+    }
+
+    .grid_holder {
+        height: 292.5vh;
+        grid-template-columns: 28.66vw 28.66vw 28.66vw;
+        grid-template-rows: 70vh 70vh 70vh 70vh;
+        gap: 2vw;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .item_1 {
+        width: 28.66vw;
+        height: 70vh;
+    }
+
+    .item_holder_1 {
+        width: 100%;
+        height: 9vh;
+        background-color: rgba(0, 0, 0, 0);
+        display: flex;
+    }
+
+    .item_image_1 {
+        width: 100%;
+        height: 55%;
+        border-radius: 2vw 0vw 10vw 0vw;
+    }
+
+    .item_name_1 {
+        color: white;
+        width: 20vw;
+        height: 3vw;
+        background-color: rgba(0, 0, 0, 0);
+        margin-left: 1.5vw;
+        font-size: 2.15vw;
+        margin-right: 1vw
+    }
+
+    .item_price_1 {
+        color: blanchedalmond;
+        font-size: 2.15vw;
+        margin-bottom: 4vh;
+        height: 6vh;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .item_description_1 {
+        width: 25vw;
+        height: 8vw;
+        background-color: rgba(0, 0, 0, 0);
+        margin-top: 2vh;
+        margin: auto;
+        font-size: 1.3vw;
+        color: white;
+    }
+}
