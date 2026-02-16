@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*==============================================================================================
+                                MOBILE STYLING/DEFAULT STYLING
+==============================================================================================*/
+header {
+    background-color: orangered;
+    height: 10vh;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+}
+.webpage_title_1{
+    color:white;
+    font-size:7vw;
+    background-color: rgba(165, 42, 42, 0);
+    height:5vh;
+    width:20vw;
+    margin-top: 2.5vh;
+    margin-left: 4vw;
+}
+.body {
+    background-color: rgb(0, 0, 0);
+    height: 360vh;
+    width: 100%;
+}
+
+.body_content {
+    background-color: rgb(0, 0, 0);
+    width: 95%;
+    margin: auto;
+    height: 100%
+}
+
+footer {
+    background-color: orangered;
+    height: 7vh;
+    width: 100%;
+}
+
+.title_1 {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 7vw;
+    height: 5vh;
+    display: inline-block;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+}
+.search_bar{
+    height:5vh;
+    width:45vw;
+    margin-top: 2.5vh;
+    margin-left: 1vw;
+}
+.search_button{
+    height:5vh;
+    width:12vw;
+    margin-top: 2.5vh;
+    margin-left: 1vw;
+}
+.navigation{
+    height:5vh;
+    width:12vw;
+    margin-top: 2.5vh;
+    margin-left: 1vw;
+}
+.section_1 {
+    width: 100%;
+    height: 107vh;
+    background-color: orangered;
+    border-radius: 2vw;
+    margin-top: 2vh;
+}
+
+.sub_title_1 {
+    color: white;
+    font-size: 5vw;
+    margin-left: 2.5vw;
+    width: 20vw;
+    margin-bottom: 1vh;
+}
+
+.grid_holder_1 {
+    width: 90vw;
+    height: 132.3vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0);
+    display: grid;
+    grid-template-columns: 44vw 44vw;
+    grid-template-rows: 33vh 33vh 33vh;
+    gap: 2vw;
+}
+
+.item_1 {
+    width: 44vw;
+    height: 33vh;
+    background-color: black;
+    border-radius: 2vw;
+}
+
+.item_image_1 {
+    width: 100%;
+    height: 16vh;
+    border-radius: 2vw 0vw 10vw 0vw;
+}
+
+.item_holder_1 {
+    width: 38vw;
+    height: 2.5vh;
+    margin:auto;
+    background-color: rgba(143, 18, 18, 0);
+    display: flex;
+    margin-bottom:1vw;
+}
+
+.item_name_1 {
+    color: white;
+    width: 30vw;
+    height: 2.5vh;
+    background-color: rgba(37, 91, 173, 0);
+    font-size: 2.5vw;
+    margin-right: 1vw
+}
+
+.item_price_1 {
+    color: blanchedalmond;
+    font-size: 2.15vw;
+    margin-bottom: 4vh;
+    height: 2.5vh;
+    width:7vw;
+    background-color: rgba(173, 21, 21, 0);
+    font-size: 2.5vw;
+}
+
+.item_description_1 {
+    width: 38vw;
+    height: 14vw;
+    background-color: rgba(5, 143, 17, 0);
+    margin-top: 2vh;
+    margin: auto;
+    font-size: 1.75vw;
+    color: white;
+}
+.item_button_1{
+    margin: auto;
+    display:block;
+    width:11vw;
+    height:2.5vh;
+    margin-top: 1vh;
+    border-radius: 1.5vw;
+    border: none;
+}
+/*==============================================================================================
+                                        TABLET STYLING
+==============================================================================================*/
+@media (min-width:481px) and (max-width:1100px) {
+    header {
+        height: 12vh;
+    }
+
+    .body {
+        height: 400vh;
+    }
+
+    .title_1 {
+        height: 7vh;
+        font-size: 8vw;
+    }
+    .section_1{
+        height:115.5vh;
+    }
+    .grid_holder_1{
+        grid-template-rows: 35vh 35vh 35vh;
+        height:108vh;
+    }
+    .item_1{
+        height:35vh
+    }
+}
+
+/*==============================================================================================
+                                        DESKTOP STYLING
+==============================================================================================*/
+@media (min-width:1101px) {
+    header {
+        height: 15vh;
+    }
+
+    .body {
+        height: 610vh;
+    }
+    footer{
+        height:15vh;
+    }
+    .title_1 {
+        font-size: 8vh;
+        height: 10vh;
+    }
+
+    .webpage_title_1{
+        font-size: 5vw;
+        margin-top: 1vh;
+        height:10vh;
+        width:15vw;
+    }
+    .search_bar{
+        height:10vh
+    }
+    .search_button{
+        height: 10vh;
+    }
+    .navigation{
+        height: 10vh;
+    }
+    .section_1{
+        height:193vh
+    }
+    .grid_holder_1{
+        grid-template-rows: 85vh 85vh;
+        grid-template-columns: 28vw 28vw 28vw;
+        margin:auto;
+        background-color: rgba(127, 255, 212, 0);
+        width:88vw;
+        height:174vh
+    }
+
+    .item_1{
+        width:28vw;
+        height:85vh
+    }
+    .item_image_1{
+        height:35vh
+    }
+    .item_holder_1{
+        background-color: rgba(0, 0, 255, 0);
+        width:25vw;
+        height:6vh
+    }
+    .item_description_1{
+        background-color: rgba(0, 255, 255, 0);
+        width:25vw;
+        font-size: 1.5vw;
+    }
+    .item_button_1{
+        margin-top: 1.5vh;
+        height:7vh;
+        width:15vh
+    }
+}

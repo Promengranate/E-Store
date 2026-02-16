@@ -21,7 +21,7 @@ header {
 .body {
     width: 100%;
     background-color: black;
-    height: 200vh;
+    height: 250vh;
 }
 
 footer {
@@ -141,7 +141,7 @@ nav ul {
 }
 .section_2 {
     width: 94vw;
-    height: 98vh;
+    height: 194vh;
     background-color: orangered;
     margin-left: 2.5%;
     border-radius: 2vw;
@@ -150,13 +150,13 @@ nav ul {
 
 .grid_holder {
     width: 90vw;
-    height: 94.75vh;
+    height: 190vh;
     margin: auto;
     background-color: rgba(0, 0, 0, 0);
     border-radius: 2vw;
     display: grid;
     grid-template-columns: 43vw 43vw;
-    grid-template-rows: 30vh 30vh;
+    grid-template-rows: 30vh 30vh 30vh 30vh 30vh;
     gap: 4vw;
 }
 
