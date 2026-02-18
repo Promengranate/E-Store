@@ -129,6 +129,8 @@ nav ul {
 .category_item {
     transition: 0.1s ease;
     cursor: pointer;
+    text-decoration: none;
+    color: white;
 }
 
 .category_item a {
